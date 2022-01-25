@@ -25,7 +25,7 @@ export default async (uri?: Uri) => {
   }
 
   workspace.fs.writeFile(
-    Uri.file(`${uri.path}/${componentName}/index.js`),
+    Uri.file(`${uri.path}/${componentName}/index.jsx`),
     new Uint8Array(Buffer.from(jsFileTemplate(componentName)))
   );
 
