@@ -16,3 +16,4 @@ export default ${name};
 
 ```
 
+![](https://github.com/taoeer/generate-react-component/blob/main/screen.gif?raw=true)
