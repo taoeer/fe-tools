@@ -2,7 +2,7 @@
   "name": "react-component-generate",
   "displayName": "Generate React Component",
   "description": "Generate React Component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/taoeer/generate-react-component"
