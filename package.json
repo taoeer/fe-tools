@@ -1,8 +1,12 @@
 {
-  "name": "fe-tools",
-  "displayName": "FE Tools",
-  "description": "es6 snippets and react tools",
+  "name": "react-component-generate",
+  "displayName": "Generate React component",
+  "description": "Generate React component",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taoeer/generate-react-component"
+  },
   "engines": {
     "vscode": "^1.63.0"
   },
@@ -10,20 +14,21 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:fe-tools.generateReactComponent"
+    "onCommand:grc.generateReactComponent"
   ],
+  "publisher": "taoeer",
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "fe-tools.generateReactComponent",
+        "command": "grc.generateReactComponent",
         "title": "Generate React component"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "fe-tools.generateReactComponent"
+          "command": "grc.generateReactComponent"
         }
       ]
     }
