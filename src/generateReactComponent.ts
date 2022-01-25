@@ -24,13 +24,15 @@ export default async (uri?: Uri) => {
     return window.showErrorMessage("No component name passed");
   }
 
-  workspace.fs.writeFile(
+  await workspace.fs.writeFile(
     Uri.file(`${uri.path}/${componentName}/index.jsx`),
     new Uint8Array(Buffer.from(jsFileTemplate(componentName)))
   );
 
-  workspace.fs.writeFile(
+  await workspace.fs.writeFile(
     Uri.file(`${uri.path}/${componentName}/index.module.less`),
     new Uint8Array(Buffer.from(""))
   );
+
+  await window.showTextDocument(Uri.file(`${uri.path}/${componentName}/index.jsx`))
 };
